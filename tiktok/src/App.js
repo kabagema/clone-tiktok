@@ -2,6 +2,7 @@ import React from "react";
 import Video from "./Video";
 import "./App.css";
 import stock from "./Hway.mp4";
+import woman from "./Liberwoman.mp4";
 function App() {
   return (
     <div className="app">
@@ -19,10 +20,10 @@ function App() {
           messages={789}
         />
         <Video
-          url={stock}
+          url={woman}
           channel="@hereIsJulien"
-          description="highway"
-          song="99 problems - JayZ"
+          description="Lady Liberty"
+          song="Lady Liberty - Barbra Streisand"
           VideoSidebar
           likes={13}
           shares={88}
