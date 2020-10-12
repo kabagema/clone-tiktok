@@ -19,12 +19,11 @@ const data = [
   },
 ];
 
-
-export default data
+export default data;
 // https://vm.tiktok.com/J16jKRL/
 // original sound - jordan rowe
 // welshginger
-
+// 2 13 36
 //60
 // 60
 // 12

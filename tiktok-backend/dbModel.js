@@ -10,5 +10,7 @@ const tiktokSchema = mongoose.Schema({
     shares: String,
 });
 
+// collection inside the databse
+export default mongoose.model('tiktokVideos', tiktokSchema)
 
 // 2: 30 : 02
