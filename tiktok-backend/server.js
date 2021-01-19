@@ -2,18 +2,12 @@ import express from "express";
 import mongoose from "mongoose";
 import Data from "./data.js";
 
-import Videos from "./dbModel.js"
+import Videos from "./dbModel"
 // app config
 const app = express();
 const port = 9000;
 
 //middlewares
- app.use(express.json());
- app.use((req, res, next)=> {
-   res.setHeaders("Access-Control-Allow-Origin","*"),
-   res.setHeaders("Access-Control-Allow-Headers", "*"),
-   next();
- })
 
 //db config
 const connection_url =
@@ -30,23 +24,12 @@ app.get("/", (req, res) => res.status(200).send("hello big boss"));
 
 app.get("/v1/posts", (req, res) => res.status(200).send(Data));
 
-app.get("/v2/posts", (req, res) => {
-  Videos.find((err, data) =>{
-      if(err)
-      {
-        res.status(500).send(err);
-      } else {
-        res.status(200).send(data);
-      }
-  });
-})
-
 app.post("/v2/posts", (req, res) => {
   // Post Request is to ADD DATA to the database
   // it will let us ADD a video DOCUMENT to the videos COLLECTIOn
     const dbVideos = req.body;
 
-    Videos.create(dbVideos, (err, data) => {
+    dbVideos.create(dbVideos, (err, data) => {
         if (err) {
         res.status(500).send(err);
         } else {
@@ -57,6 +40,3 @@ app.post("/v2/posts", (req, res) => {
 
 // listen
 app.listen(port, () => console.log(`listening on localhost:${port}`));
-
-
-//ignoring security
