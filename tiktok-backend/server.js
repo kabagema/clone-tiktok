@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import Data from "./data.js";
 
-import Videos from "./dbModel"
+import Videos from "./dbModel.js"
 // app config
 const app = express();
 const port = 9000;
@@ -29,7 +29,7 @@ app.post("/v2/posts", (req, res) => {
   // it will let us ADD a video DOCUMENT to the videos COLLECTIOn
     const dbVideos = req.body;
 
-    dbVideos.create(dbVideos, (err, data) => {
+    Videos.create(dbVideos, (err, data) => {
         if (err) {
         res.status(500).send(err);
         } else {
