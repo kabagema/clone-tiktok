@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Video from "./Video";
-import "./App.css";
-import stock from "./Hway.mp4";
-import woman from "./Liberwoman.mp4";
+import "./App.css";f
 import axios from "./axios";
 function App() {
   const [Videos, SetVideos] = useState([]);
