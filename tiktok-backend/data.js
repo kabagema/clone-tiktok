@@ -1,6 +1,7 @@
 const data = [
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    url:
+      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
     channel: "nickkjx",
     song: "I Almost Died - Shadowgraphs",
     likes: "11",
@@ -9,7 +10,8 @@ const data = [
     shares: "1",
   },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    url:
+      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
     channel: "welshginger",
     song: "Original Sound - Jordan Rowe",
     likes: "60",
@@ -19,6 +21,4 @@ const data = [
   },
 ];
 
-
-export default data
-
+export default data;
