@@ -1,6 +1,6 @@
 const data = [
   {
-    url: "https://vm.tiktok.com/JLcKcXG/",
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
     channel: "nickkjx",
     song: "I Almost Died - Shadowgraphs",
     likes: "11",
@@ -9,7 +9,7 @@ const data = [
     shares: "1",
   },
   {
-    url: "https://vm.tiktok.com/J16jKRL/",
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
     channel: "welshginger",
     song: "Original Sound - Jordan Rowe",
     likes: "60",

@@ -21,7 +21,7 @@ function VideoSidebar({ likes, shares, messages }) {
                 )}
                 {/* <FavoriteIcon fontSize="large"/> */}
 
-                <p>{liked ? likes + 1 : likes}</p>
+                <p>{liked ? Number(likes) + 1 : likes}</p>
             </div>
             <div className="videoSidebar__button">
                 <MessageIcon fontSize="large"/>
